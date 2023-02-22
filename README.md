@@ -2,9 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![Project Preview](./src/find-images.png)
 
-## Available Scripts
+## Run This commands
 
-### `git clone`
+### `git clone https://github.com/khalidhagane/react_unsplash.git`
 
 ### `cd react_unsplash`
 
