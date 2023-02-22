@@ -1,8 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-![Project Preview](./src/find-images.png)
-
-## Run This commands
+## You can run this project by following the steps below
 
 ### `git clone https://github.com/khalidhagane/react_unsplash.git`
 
@@ -20,10 +16,3 @@ Instal All dependencies in this project
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-<!-- ### Link
-
-- Unsplash Developer: https://unsplash.com/developers
-- Create React App: https://create-react-app.dev/ -->
-
-<!-- ### Video Tutorial -->
