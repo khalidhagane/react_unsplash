@@ -3,19 +3,9 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          
-         
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
   );
 }
 
