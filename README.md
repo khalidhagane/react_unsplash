@@ -1,4 +1,4 @@
-## You can run this project by following the steps below
+## You can run this project by running the commands below
 
 ### `git clone https://github.com/khalidhagane/react_unsplash.git`
 
