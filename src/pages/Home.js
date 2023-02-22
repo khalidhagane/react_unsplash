@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import SearchComponent from '../components/search/SearchComponent';
 import { getPhotos } from '../services/unsplash';
-import { TailSpin } from 'react-loader-spinner';
-import ReactPaginate from 'react-paginate';
-import Image from '../components/image/Image';
+
+import Image from '../components/image/ImageComponent';
 import ErrorAlert from '../components/error/ErrorAlert';
+import Loading from '../components/loading/Loading';
+import Paginate from '../components/paginate/Paginate';
+
 
 //creat context
 
@@ -42,18 +44,7 @@ function Home() {
         <ErrorAlert error={error}/>
       )}
       {loading ? (
-        <div className='w-screen min-h-[600px] flex items-center justify-center'>
-          <TailSpin
-            height='80'
-            width='80'
-            color='#4fa94d'
-            ariaLabel='tail-spin-loading'
-            radius='1'
-            wrapperStyle={{}}
-            wrapperClass=''
-            visible={true}
-          />
-        </div>
+        <Loading/>
       ) : (
         <section className='overflow-hidden text-neutral-700'>
           <div className='container mx-auto px-5 py-2 lg:px-32 lg:pt-12'>
@@ -67,25 +58,7 @@ function Home() {
       )}
 
       {!error && (
-        <ReactPaginate
-          breakLabel='...'
-          nextLabel='>'
-          onPageChange={handlePageClick}
-          pageRangeDisplayed={5}
-          pageCount={totalPages}
-          previousLabel='<'
-          renderOnZeroPageCount={null}
-          marginPagesDisplayed={2}
-          containerClassName={'paginate'}
-          pageLinkClassName={'paginate__page-link'}
-          previousLinkClassName={`paginate__prev-link ${
-            page === 1 ? 'disabled' : ''
-          }`}
-          nextLinkClassName={`paginate__next-link ${
-            page === totalPages ? 'disabled' : ''
-          }`}
-          activeClassName={'active'}
-        />
+        <Paginate page={page} totalPages={totalPages} handlePageClick={handlePageClick} />
       )}
     </main>
   );

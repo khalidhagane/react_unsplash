@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Image({ id, alt_description, urls }) {
+function ImageComponent({ id, alt_description, urls }) {
   return (
     <div key={id} className='flex w-1/3 flex-wrap'>
       <div className='w-full p-1 md:p-2'>
@@ -14,4 +14,4 @@ function Image({ id, alt_description, urls }) {
   );
 }
 
-export default Image;
+export default ImageComponent;
