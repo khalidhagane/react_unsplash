@@ -8,6 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `cd react_unsplash`
 
+### `Rename the example.env file to .env then get your api key at https://unsplash.com/oauth/applications after creating a new application then paste it on the file`
 
 In the project directory, you can run:
 
@@ -26,4 +27,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - Create React App: https://create-react-app.dev/ -->
 
 <!-- ### Video Tutorial -->
-
