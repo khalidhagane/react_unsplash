@@ -5,7 +5,7 @@ export default function SearchComponent({ setSearch, getData }) {
     <div className='flex items-center bg-gray-800 py-5'>
       <div className='mx-8 w-full'>
         <div className='flex justify-between items-center		w-full'>
-          <h1 className='text-white text-xl font-semibold	'>FIAMANE</h1>
+          <h1  className='text-white text-xl font-semibold	'>FIAMANE</h1>
           
           <div className='w-96'>
             <label
