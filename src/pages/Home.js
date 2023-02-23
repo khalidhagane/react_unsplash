@@ -7,7 +7,6 @@ import ErrorAlert from '../components/error/ErrorAlert';
 import Loading from '../components/loading/Loading';
 import Paginate from '../components/paginate/Paginate';
 
-
 //creat context
 
 function Home() {
@@ -38,16 +37,17 @@ function Home() {
   };
 
   return (
-    <main>
+    <main
+      className='bg-slate-100 h-screen	pb-6
+    '
+    >
       <SearchComponent getData={getData} setSearch={setSearchImage} />
-      {error && (
-        <ErrorAlert error={error}/>
-      )}
+      {error && <ErrorAlert error={error} />}
       {loading ? (
-        <Loading/>
+        <Loading />
       ) : (
-        <section className='overflow-hidden text-neutral-700'>
-          <div className='container mx-auto px-5 py-2 lg:px-32 lg:pt-12'>
+        <section className=' '>
+          <div className='container mx-auto my-20'>
             <div className='-m-1 flex flex-wrap md:-m-2'>
               {images.map(({ id, alt_description, urls }) => (
                 <Image id={id} alt_description={alt_description} urls={urls} />
@@ -58,7 +58,13 @@ function Home() {
       )}
 
       {!error && (
-        <Paginate page={page} totalPages={totalPages} handlePageClick={handlePageClick} />
+        <div className='pb-10'>
+          <Paginate
+            page={page}
+            totalPages={totalPages}
+            handlePageClick={handlePageClick}
+          />
+        </div>
       )}
     </main>
   );
